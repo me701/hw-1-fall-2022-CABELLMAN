@@ -48,7 +48,6 @@ To display CPU information, I used the following command:
 
 ```
 cat /proc/cpuinfo
-       #      code in Markdown!
 ```
 this command produced a frankly excessive amount of information that did
 include my cpu speed in mhz and core count.  The core count listed was
