@@ -1,4 +1,4 @@
- ME 701 -- Homework 1 -- Your Name Here
+ ME 701 -- Homework 1 -- Adam Bell
 
 ## Instructions
 
