@@ -1,4 +1,4 @@
-# ME 701 -- Homework 1 -- Your Name Here
+ ME 701 -- Homework 1 -- Adam Bell
 
 ## Instructions
 
@@ -27,17 +27,15 @@ or Octave).
 
 ### Solution
 
-Write your solution here.  Note, in the past, we've used a full, graphical
-version of Linux.  With WSL, you probably don't have as direct a path for
-exploring software in the Software Manager.  However, use the power of
-Google (or AskJeeves) to explore what sorts of open-source software is out
-there for technical or other applications.
-
+I use soldiworks a lot of modeling parts that I 3d print at home.  An open
+source alternative is FreeCAD.  It is visually fairly similar and has all
+of the core functionality that I use solidworks for at home.  It does not
+have some of the fancier features that I use at work but would be a great
+free alternative to replace my need for solidworks at home.
 
 ## Problem 3 -- Your CPU
 
 ### Statement
-
 Figure out how to display information about your CPU via the
 command line.  This should include at least the **processor
 speed** and the **number of cores**.  Describe your command(s) below.
@@ -48,10 +46,12 @@ using `ls > directory_contents.txt` to dump the contents of a directory to a fil
 
 To display CPU information, I used the following command:
 
-```bash
-ls -al # <--- that's not right, but it shows you how to include
-       #      code in Markdown!
 ```
+cat /proc/cpuinfo
+```
+this command produced a frankly excessive amount of information that did
+include my cpu speed in mhz and core count.  The core count listed was
+physical cores and not logical cores.
 
 ## Problem 4 -- Resource Hogs
 
@@ -63,7 +63,14 @@ in your writeup.
 
 ### Solution
 
+use the command
 
+```
+top
+```
+then press the M key to sort by memory usage.
+you may then press the P key to sort by processor usage.
+when finished you may press the q key to return to the command line
 
 ## Problem 5 -- `bash`
 
@@ -74,3 +81,18 @@ Where is `bash` located on your Linux system?  And what version of
 determine this information.
 
 ### Solution
+using the command
+
+```
+which bash
+```
+shows that bash is located at
+```
+/usr/bin/bash
+```
+
+Using the command
+```
+bash -version
+```
+shows that bash version 5.0.16 is installed
